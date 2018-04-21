@@ -1,0 +1,46 @@
+body{
+  background: url(images/background.jpg);
+  background-size: cover;
+}
+
+.ocu{
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+
+/*header*/
+.img-circle {
+  display: block;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border: 9px solid rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.title {
+  font-family:Indie Flower, cursive;
+  font-size: 49px;
+  color: rgb(249,28,191);
+}
+
+.text-center{
+  text-align: center;
+}
+
+/*link*/
+.linklist{
+  text-align: center;
+}
+
+.otherlink{
+  margin-left: 20px;
+}
+
+/*clock*/
+.clock{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
