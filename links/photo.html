@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Photos</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/photo.css">
+</head>
+<body>
+<!-- Part 1: Add the scripts -->
+<!-- Step 1: load jQuery and Popper -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- Step 2: load imagesloaded. imagesloaded makes sure the images are not displayed until they are fully loaded -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!-- Step 3: load masonry -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- Step 4: load bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- Part 2: Create the navbar and jumbotron-->
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+	<a class="navbar-brand" href="#"><i class="fas fa-images"></i> My IMGS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+	        	<a class="nav-link" href="https://yyp666.github.io/">Home <span class="sr-only">(current)</span></a>
+	      	</li>
+	      	<li class="nav-item">
+	        	<a class="nav-link" href="#">Link</a>
+	      	</li>
+	      	<li class="nav-item dropdown">
+        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Dropdown link
+        	</a>
+        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          		<a class="dropdown-item" href="#">Action</a>
+          		<a class="dropdown-item" href="#">Another action</a>
+          		<a class="dropdown-item" href="#">Something else here</a>
+        	</div>
+      		</li>
+	      	<li class="nav-item">
+	        	<a class="nav-link disabled" href="#">Personal Images Sharing</a>
+	      	</li>
+    	</ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      	<input class="form-control mr-sm-2" type="search" placeholder="Search Images here" aria-label="Search">
+	      	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+  	</div>
+</nav>
+<!-- jumbotron -->
+<div class="backgroundimg">
+	<div class="jumbotron jumbotron-fluid" style="background-color: rgba(0,0,0,0.5);">
+		<div class="container">
+			<h1 class="heading"><i class="fas fa-camera-retro"></i> My Image Gallery</h1>
+			<p class="heading">A bunch of images I love</p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</div>
+	</div>
+</div>
+<!-- Part 3: Create the grid -->
+<!-- Step 1: main grid wrapper-->
+<div class="grid">
+  <!-- Step 2: Add grid items-->
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/070n-nwwXq0' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1498618388276-4c0cf89c15ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0dafc2870b3ec64599a380171496298&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/oqIyCl88IAk' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1524163610364-d47379ef45f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=205f844c2d7d96c3f02a1350cd00be17&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/lmgrFP0QBKw' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1513016805932-501981d32562?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6887cc3f136b6aa4e390d1a706af44b7&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/AJFdEo-DKCg' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1504466664756-1adbe6d13b36?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a189df52ae152da65e86df0c833dd80&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/hQNY2WP-qY4' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1524261399568-56d8c862aaf8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb319f95e1b6e9454e00526cbb0daaa4&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/9DwugqVh9sU' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1511547876233-3710a28eb30a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22f767f18b0b0f11a5a1b6f3926cbcd3&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+	<div class="grid-item">
+		<a href='https://source.unsplash.com/Hyu76loQLdk' itemprop='contentUrl'>
+		<img src='https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2daae6fa88d0422996cb571d9e41681e&auto=format&fit=crop&w=500&q=60' class="img-thumbnail">
+		</a>
+	</div>
+</div>
+
+<!-- Part 3: the script call -->
+<!-- Now that everything is loaded we create a script to trigger masonary on $grid. Note that this simply says: "if the images are fully loaded, trigger masnory on $grid. -->
+<script>
+  var $grid = $(".grid").imagesLoaded(function() {
+    $grid.masonry({
+      itemSelector: ".grid-item"
+    });
+  });
+</script>
+</body>
+</html>
