@@ -6,100 +6,103 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Gaegu&amp;subset=korean" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/clock.css">
+	<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
 </head>
 <body>
 
+<!-- header -->
+	<header>
+		<h1 class="title">
+			<img class="img-circle" src="images/head.jpg" alt="">
+			<span>Bintian and Yaping's home</span>
+		</h1>
+	</header>
+<!-- sidebar -->
+	<div class="wrapper">
+	    <nav id="sidebar">
+			<div class="sidebar-header">
+	        	<h1>导航栏</h1>
+	      	</div>
+			<ul class="list-unstyled components">
+	        	<h2>链接：</h2>
+	        	<li>
+	          		<a href="links/photo.html">图库</a>
+	        	</li>
+	        	<li>
+	          		<a href="#menu">照片</a>
+	        	</li>
+	        	<li>
+	          		<a href="#menu">资料</a>
+	        	</li>
+		        <li>
+		          	<a href="#">博客</a>
+		        </li>
+	      	</ul>
+	    </nav>
+	</div>
+<!-- searching bar -->
+	<div class="ocu">
+	<center>
+		<form action="http://www.baidu.com/baidu" target="_blank">
+			<table>
+				<tr>
+					<td>
+						<a href="http://www.baidu.com/" target="_blank">
+							<img src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super" height="35" width="100" alt="Baidu" align="bottom" border="0"></a>
+						<input name=tn type=hidden value=baidu>
+						<input type=text name=word size=32>
+						<input type="submit" value="百度搜索">
+					</td>
+				</tr>
+			</table>
+		</form>
 
-<header>
-	<h1 class="title">
-		<img class="img-circle" src="images/head.jpg" alt="">
-		<span>Bintian and Yaping's home</span>
-	</h1>
-</header>
-
-<div class="wrapper">
-    <nav id="sidebar">
-		<div class="sidebar-header">
-        	<h1>导航栏</h1>
-      	</div>
-		<ul class="list-unstyled components">
-        	<h2>链接：</h2>
-        	<li>
-          		<a href="links/photo.html">图库</a>
-        	</li>
-        	<li>
-          		<a href="#menu">照片</a>
-        	</li>
-        	<li>
-          		<a href="#menu">资料</a>
-        	</li>
-	        <li>
-	          	<a href="#">博客</a>
-	        </li>
-      	</ul>
-    </nav>
-</div>
-
-<div class="ocu">
-<center>
-	<form action="http://www.baidu.com/baidu" target="_blank">
-		<table>
+	<FORM method=GET action="http://www.google.com/search" target="_blank">
+		<TABLE style="border:none;" >
 			<tr>
 				<td>
-					<a href="http://www.baidu.com/" target="_blank">
-						<img src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super" height="35" width="100" alt="Baidu" align="bottom" border="0"></a>
-					<input name=tn type=hidden value=baidu>
-					<input type=text name=word size=32>
-					<input type="submit" value="百度搜索">
+				<A HREF="http://www.google.com/" target="_blank">
+					<IMG SRC="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
+				<INPUT TYPE=text name=q size=32>
+				<INPUT TYPE=hidden name=hl  value=en-US>
+				<INPUT type=submit name=btnG  value="谷歌搜索">
 				</td>
 			</tr>
-		</table>
-	</form>
+		</TABLE>
+	</FORM>
 
-<FORM method=GET action="http://www.google.com/search" target="_blank">
-	<TABLE style="border:none;" >
-		<tr>
-			<td>
-			<A HREF="http://www.google.com/" target="_blank">
-				<IMG SRC="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
-			<INPUT TYPE=text name=q size=32>
-			<INPUT TYPE=hidden name=hl  value=en-US>
-			<INPUT type=submit name=btnG  value="谷歌搜索">
-			</td>
-		</tr>
-	</TABLE>
-</FORM>
+	<FORM method=GET action="http://scholar.google.com/scholar?inst=8873731101682220099" target="_blank">
+		<TABLE style="border:none;" >
+			<tr>
+				<td>
+				<A HREF="https://scholar.google.com" target="_blank">
+					<IMG SRC="https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_64dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
+				<INPUT TYPE=text name=q size=32>
+				<INPUT TYPE=hidden name=hl  value=en-US>
+				<INPUT type=submit name=btnG  value="谷歌学术">
+				</td>
+			</tr>
+		</TABLE>
+	</FORM>
+	</center>
+	</div>
+<!-- links part -->
+	<p  class="linklist">
+		<a href="https://umail.it.umass.edu/?_ga=2.33453752.767046413.1524089661-308410348.1523201538" target="_blank"><img src="images/umail.jpg" border="0"></a>
+		<a class = "otherlink" href="https://mail.google.com/mail/" target="_blank"><img src="images/gmail.jpg" border="0"></a>
+		<a class = "otherlink" href="https://mail.qq.com/cgi-bin/loginpage?f=html" target="_blank"><img src="images/qqmail.png" border="0"></a>
+	</p>
 
-<FORM method=GET action="http://scholar.google.com/scholar?inst=8873731101682220099" target="_blank">
-	<TABLE style="border:none;" >
-		<tr>
-			<td>
-			<A HREF="https://scholar.google.com" target="_blank">
-				<IMG SRC="https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_64dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
-			<INPUT TYPE=text name=q size=32>
-			<INPUT TYPE=hidden name=hl  value=en-US>
-			<INPUT type=submit name=btnG  value="谷歌学术">
-			</td>
-		</tr>
-	</TABLE>
-</FORM>
-</center>
-</div>
-
-<p  class="linklist">
-	<a href="https://umail.it.umass.edu/?_ga=2.33453752.767046413.1524089661-308410348.1523201538" target="_blank"><img src="images/umail.jpg" border="0"></a>   
-	<a class = "otherlink" href="https://mail.google.com/mail/" target="_blank"><img src="images/gmail.jpg" border="0"></a>
-	<a class = "otherlink" href="https://mail.qq.com/cgi-bin/loginpage?f=html" target="_blank"><img src="images/qqmail.png" border="0"></a>
-</p>
-
-<p class="linklist">
-	<a class = "otherlink" href="https://cn.dealmoon.com/" target="_blank"><img src="images/dealmoon.jpg" border="0"></a>
-	<a class = "otherlink" href="https://www.amazon.com/" target="_blank"><img src="images/amazon.png" border="0"></a>
-	<a class = "otherlink" href="http://www.gamersky.com/" target="_blank"><img src="images/youmin.jpg" border="0"></a>
-</p>
-
-<div class="clock">
-	<iframe src="images/clock/index.html" width = "500px" height="300px" frameborder= 0 scrolling="no" ></iframe>
-</div>
+	<p class="linklist">
+		<a class = "otherlink" href="https://cn.dealmoon.com/" target="_blank"><img src="images/dealmoon.jpg" border="0"></a>
+		<a class = "otherlink" href="https://www.amazon.com/" target="_blank"><img src="images/amazon.png" border="0"></a>
+		<a class = "otherlink" href="http://www.gamersky.com/" target="_blank"><img src="images/youmin.jpg" border="0"></a>
+	</p>
+<!-- clock -->
+	<div class="clock">
+			<div id="clock"></div>
+	</div>
 </body>
 </html>
