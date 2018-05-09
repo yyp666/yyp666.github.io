@@ -31,10 +31,26 @@ body{
 /*link*/
 .linklist{
   text-align: center;
+  position: relative;
 }
 
 .otherlink{
   margin-left: 20px;
+}
+
+.umassMath{
+  border: none;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.00);
+  padding: 0px 0px;
+  font-size: 16px;
+  position:absolute;
+  font-family: 'Gaegu', cursive;
+}
+
+.mouseMove{
+    background-color: #A1FFFFFF;
+    zoom: 120%;
 }
 
 /*clock*/
