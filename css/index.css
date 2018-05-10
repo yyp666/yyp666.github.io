@@ -45,12 +45,14 @@ body{
   padding: 0px 0px;
   font-size: 16px;
   position:absolute;
-  font-family: 'Gaegu', cursive;
+  font-family: 'Pangolin', cursive;
+  text-shadow: 4px 4px 4px #FD0;
+  color: red;
 }
 
 .mouseMove{
-    background-color: #A1FFFFFF;
-    zoom: 120%;
+  background-color: #A1FFFFFF;
+  zoom: 120%;
 }
 
 /*clock*/
