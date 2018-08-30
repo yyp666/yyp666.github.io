@@ -4,6 +4,9 @@ body{
 background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.outlink{
+	font-size:30px;
+}
 #HomePage{
 	color:#1A79E4FF;
 }
