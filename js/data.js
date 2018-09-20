@@ -32,12 +32,12 @@ onload = function() {
 
 $("#folder1").on("click", function(event){
     $(this).toggleClass("opened");
-    $(".folder1").fadeToggle(500);
+    $(".folder1").fadeToggle(400);
     if ($(this).hasClass("opened")) {
-        $("#folder1").children('img').attr("src", "../../images/folder_opend.png");
+        $("#folder1").children('img').attr("src", "../../images/folder_open.svg");
     }
     else{
-        $("#folder1").children('img').attr("src", "../../images/folder.png");
+        $("#folder1").children('img').attr("src", "../../images/folder.svg");
     }
     event.stopPropagation();
 });
