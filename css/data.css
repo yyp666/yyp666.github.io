@@ -19,4 +19,6 @@ background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, F
 .fa-file-alt{
 	color:#1A79E4FF;
 }
-
+.folder a{
+	padding-left: 80px;
+}
