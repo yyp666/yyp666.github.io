@@ -34,10 +34,10 @@ $("#folder1").on("click", function(event){
     $(this).toggleClass("opened");
     $(".folder1").fadeToggle(500);
     if ($(this).hasClass("opened")) {
-        $("#folder1").children('i').attr("class", "fas fa-folder-open col-1");
+        $("#folder1").children('img').attr("src", "../../images/folder_opend.png");
     }
     else{
-        $("#folder1").children('i').attr("class", "fas fa-folder col-1");
+        $("#folder1").children('img').attr("src", "../../images/folder.png");
     }
     event.stopPropagation();
 });

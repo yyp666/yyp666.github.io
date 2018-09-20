@@ -22,3 +22,7 @@ background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, F
 .folder a{
 	padding-left: 80px;
 }
+.col-1{
+	padding-left: 0px;
+	max-width: 6%;
+}
