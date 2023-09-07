@@ -21,59 +21,65 @@
 <!-- searching bar -->
 	<center>
 		<form action="https://www.baidu.com/baidu" target="_blank">
-			<table>
+			<table  style="border:none;">
 				<tr>
 					<td>
 						<a href="https://www.baidu.com/" target="_blank">
-							<img src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super" height="35" width="100" alt="Baidu" align="bottom" border="0"></a>
+							<img src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super" height="35" width="100" alt="Baidu" align="absmiddle"></a>
 						<input name=tn type=hidden value=baidu>
-						<input type=text name=word size=32>
-						<input type="submit" value="百度搜索">
+						<input type=text name=hl  size=32>
+						<input type="submit" value="百度搜索" style="width:80px">
 					</td>
 				</tr>
 			</table>
 		</form>
-
-		<FORM method=GET action="https://www.google.com/search" target="_blank">
-			<TABLE style="border:none;" >
+		<form method=GET action="https://www.google.com/search" target="_blank">
+			<table style="border:none;" >
 				<tr>
 					<td>
 					<A HREF="https://www.google.com/" target="_blank">
-						<IMG SRC="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
+						<IMG SRC="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="35" width="100" ALT="Google" align="absmiddle"></A>
 					<INPUT TYPE=text name=q size=32 autofocus>
 					<INPUT TYPE=hidden name=hl  value=en-US>
-					<INPUT type=submit name=btnG  value="谷歌搜索">
+					<INPUT type=submit name=btnG  value="谷歌搜索" style="width:80px">
 					</td>
 				</tr>
-			</TABLE>
-		</FORM>
-
-		<FORM method=GET action="https://scholar.google.com/scholar?inst=8873731101682220099" target="_blank">
-			<TABLE style="border:none;" >
+			</table>
+		</form>
+		<form method=GET action="https://scholar.google.com/scholar?inst=8873731101682220099" target="_blank">
+			<table style="border:none;" >
 				<tr><td>
 					<A HREF="https://scholar.google.com" target="_blank">
 						<IMG SRC="https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_64dp.png" height="35" width="100" border="0" ALT="Google" align="absmiddle"></A>
 					<INPUT TYPE=text name=q size=32>
 					<INPUT TYPE=hidden name=hl  value=en-US>
-					<INPUT type=submit name=btnG  value="谷歌学术">
+					<INPUT type=submit name=btnG  value="谷歌学术" style="width:80px">
 				</td></tr>
-			</TABLE>
-		</FORM>
+			</table>
+		</form>
+		<form action="https://chat.openai.com/" method="GET" target="_blank">
+			<table  style="border:none;">
+				<tr><td>
+						<a href="https://chat.openai.com/" target="_blank">
+							<img src="images/chatGPT.png" height="45" width="200" align="absmiddle" border="0"></a>
+				</td></tr>
+			</table>
+		</form>
 	</center>
 <!-- links part -->
 <img class="cat "src="images/cat1.png">
 <p  class="linklist">
 	<span>Mail:</span>
-	<a class = "otherlink" href="https://mail.google.com/mail/" target="_blank"><img src="images/gmail.jpeg" border="0"></a>
-	<a class = "otherlink" href="https://mail.qq.com/cgi-bin/loginpage?f=html" target="_blank"><img src="images/qqmail.jpeg" border="0"></a>
-	<a class = "otherlink" href="https://outlook.live.com/mail/0/" target="_blank"><img src="images/outlook.png" border="0"></a>
-	<span style="margin-left: -18px;"></span>
+	<a class = "otherlink" href="https://mail.google.com/mail/" target="_blank"><img src="images/gmail.jpeg"></a>
+	<a class = "otherlink" href="https://mail.qq.com/cgi-bin/loginpage?f=html" target="_blank"><img src="images/qqmail.jpeg"></a>
+	<a class = "otherlink" href="https://outlook.live.com/mail/0/" target="_blank"><img src="images/outlook.png"></a>
+	<span style="margin-left: -32px;"></span>
           <br>
 	<span>Work:</span>
-	<a class = "otherlink" href="https://www.1point3acres.com/bbs/" target="_blank"><img src="images/yimusanfendi.png" border="0"></a>
-	<a class = "otherlink" href="https://www.overleaf.com/project" target="_blank"><img src="images/overleaf.png" border="0"></a>
-	<a class = "otherlink" href="https://www.notion.so/" target="_blank"><img src="images/note.jpeg" border="0"></a>
-	<span style="margin-left: 25px;"></span>
+	<a class = "otherlink" href="https://www.1point3acres.com/bbs/" target="_blank"><img src="images/yimusanfendi.png" border="0" height="40" width="100"></a>
+	<a class = "otherlink" href="https://www.overleaf.com/project" target="_blank"><img src="images/overleaf.png" border="0" height="40" width="100"></a>
+	<a class = "otherlink" href="https://www.notion.so/" target="_blank"><img src="images/note.jpeg" border="0" height="40" width="100"></a>
+	<span style="margin-left: -17px;"></span>
 	<br>
 	<span>Game:</span>
 	<a class = "otherlink" href="http://www.gamersky.com/" target="_blank"><img src="images/youmin.jpg" border="0"></a>
@@ -83,7 +89,7 @@
 	<span>Shop:</span>
 	<a class = "otherlink" href="https://www.amazon.com/" target="_blank"><img src="images/amazon.png" border="0"></a>
 	<a class = "otherlink" href="https://cn.dealmoon.com/" target="_blank"><img src="images/dealmoon.jpg" border="0"></a>
-	<span style="margin-left: 177px;"></span>
+	<span style="margin-left: 150px;"></span>
 </p>
 <!-- clock -->
 <div class="clock">

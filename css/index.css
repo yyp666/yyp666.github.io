@@ -35,7 +35,11 @@ body{
   font-size: 65px;
   color: rgb(249,28,191);
 }
-
+.linklist img{
+  border:0;
+  height:40px;
+  width:150px;
+}
 .mouseMove{
   background-color: #A1FFFFFF;
   zoom: 120%;
