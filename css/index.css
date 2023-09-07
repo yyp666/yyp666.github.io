@@ -6,11 +6,6 @@ body{
   max-width: 100%;
 }
 
-.ocu{
-  background-color: rgba(0, 0, 0, 0.01);
-}
-
-
 /*header*/
 .img-circle {
   display: block;
@@ -22,6 +17,11 @@ body{
   border-radius: 50%;
 }
 
+.cat{
+  display: block;
+  margin: 0 auto;
+}
+
 .title{
   font-size: 49px;
   color: rgb(249,28,191);
@@ -30,24 +30,10 @@ body{
 
 /*link*/
 .linklist{
+  margin:0 auto;
   text-align: center;
-  position: relative;
-}
-
-.otherlink{
-  margin-left: 20px;
-}
-
-.umassMath{
-  border: none;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.00);
-  padding: 0px 0px;
-  font-size: 16px;
-  position:absolute;
-  font-family: 'Pangolin', cursive;
-  text-shadow: 4px 4px 4px #FD0;
-  color: red;
+  font-size: 65px;
+  color: rgb(249,28,191);
 }
 
 .mouseMove{
